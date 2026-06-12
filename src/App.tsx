@@ -641,7 +641,7 @@ export default function App() {
               className="w-full flex flex-col justify-center items-center text-center h-screen pt-24 px-4 relative overflow-hidden shadow-2xl bg-[#050b14]"
             >
               {/* Background Layer (Scaled slightly to crop out any baked-in image borders/corners) */}
-              <div 
+              <div
                 className="absolute inset-0 z-0 bg-cover bg-center scale-[1.03]"
                 style={{
                   backgroundImage: `linear-gradient(135deg, rgba(0, 15, 30, 0.2) 0%, rgba(0, 5, 20, 0.5) 100%), url('/saas_royal_bg.png')`
@@ -1261,9 +1261,9 @@ export default function App() {
       }
       case 'products':
         return (
-          <section id="products" className="relative bg-[#090d16] pt-40 pb-24 min-h-screen">
+          <section id="products" data-theme="dark" className="relative bg-[#090d16] pt-40 pb-24 min-h-screen">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
-              
+
               {/* Platform Title */}
               <div className="text-center mb-24 flex flex-col items-center px-4" data-aos="fade-down" data-aos-duration="1000">
                 <span className="text-[#10b981] text-xs font-bold uppercase tracking-[0.25em] mb-8">
@@ -1278,17 +1278,17 @@ export default function App() {
               </div>
 
               {/* Card 1: Image Left, Text Right */}
-              <div 
-                data-aos="fade-up" 
-                data-aos-duration="1000" 
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
                 className="sticky top-28 mb-16 bg-[#0f172a]/95 backdrop-blur-md p-10 md:p-12 rounded-[2rem] border border-[#10b981]/20 shadow-2xl flex flex-col lg:flex-row items-center gap-12 z-10 min-h-[480px] lg:min-h-[520px]"
               >
                 <div className="w-full lg:w-1/2 bg-[#0b0f19] p-4 rounded-2xl border border-slate-700/50 flex items-center justify-center">
                   <div className="w-full aspect-[16/10] bg-[#0c0e17] p-2.5 rounded-[1.5rem] shadow-2xl border-4 border-slate-800/80">
-                    <img 
-                      src="/Dashboard.png" 
-                      alt="Vendor Control Panel Dashboard" 
-                      className="rounded-xl w-full h-full object-contain transition-transform duration-500 hover:scale-[1.02]" 
+                    <img
+                      src="/Dashboard.png"
+                      alt="Vendor Control Panel Dashboard"
+                      className="rounded-xl w-full h-full object-contain transition-transform duration-500 hover:scale-[1.02]"
                     />
                   </div>
                 </div>
@@ -1301,18 +1301,18 @@ export default function App() {
               </div>
 
               {/* Card 2: Image Right, Text Left */}
-              <div 
-                data-aos="fade-up" 
-                data-aos-duration="1000" 
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
                 data-aos-delay="100"
                 className="sticky top-32 mb-16 bg-[#0f172a]/95 backdrop-blur-md p-10 md:p-12 rounded-[2rem] border border-[#10b981]/30 shadow-2xl flex flex-col lg:flex-row-reverse items-center gap-12 z-20 min-h-[480px] lg:min-h-[520px]"
               >
                 <div className="w-full lg:w-1/2 bg-[#0b0f19] p-4 rounded-2xl border border-slate-700/50 flex items-center justify-center">
                   <div className="w-full aspect-[16/10] bg-[#0c0e17] p-2.5 rounded-[1.5rem] shadow-2xl border-4 border-slate-800/80">
-                    <img 
-                      src="/custom_qr_modal.png" 
-                      alt="Product QR Code Generation" 
-                      className="rounded-xl w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]" 
+                    <img
+                      src="/custom_qr_modal.png"
+                      alt="Product QR Code Generation"
+                      className="rounded-xl w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]"
                     />
                   </div>
                 </div>
@@ -1325,18 +1325,18 @@ export default function App() {
               </div>
 
               {/* Card 3: Image Left, Text Right */}
-              <div 
-                data-aos="fade-up" 
-                data-aos-duration="1000" 
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
                 data-aos-delay="150"
                 className="sticky top-36 mb-16 bg-[#0f172a]/95 backdrop-blur-md p-10 md:p-12 rounded-[2rem] border border-[#10b981]/40 shadow-2xl flex flex-col lg:flex-row items-center gap-12 z-30 min-h-[480px] lg:min-h-[520px]"
               >
                 <div className="w-full lg:w-1/2 bg-[#0b0f19] p-4 rounded-2xl border border-slate-700/50 flex items-center justify-center">
                   <div className="w-full aspect-[16/10] bg-[#0c0e17] p-2.5 rounded-[1.5rem] shadow-2xl border-4 border-slate-800/80">
-                    <img 
-                      src="/Image.png" 
-                      alt="Capture Product Details" 
-                      className="rounded-xl w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]" 
+                    <img
+                      src="/Image.png"
+                      alt="Capture Product Details"
+                      className="rounded-xl w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]"
                     />
                   </div>
                 </div>
@@ -1349,19 +1349,19 @@ export default function App() {
               </div>
 
               {/* Card 4: Image Right, Text Left */}
-              <div 
-                data-aos="fade-up" 
-                data-aos-duration="1000" 
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
                 data-aos-delay="200"
                 className="sticky top-40 mb-32 bg-[#0f172a]/95 backdrop-blur-md p-10 md:p-12 rounded-[2rem] border border-[#10b981]/50 shadow-2xl flex flex-col lg:flex-row-reverse items-center gap-12 z-40 min-h-[480px] lg:min-h-[520px]"
               >
                 <div className="w-full lg:w-1/2 bg-[#0b0f19] p-4 rounded-2xl border border-slate-700/50 flex items-center justify-center">
                   <div className="w-full aspect-[16/10] bg-[#0c0e17] p-2.5 rounded-[1.5rem] shadow-2xl border-4 border-slate-800/80">
                     <div className="w-full h-full rounded-xl overflow-hidden relative">
-                      <img 
-                        src="/Verify-Success.png" 
-                        alt="Authentiq Verification UI" 
-                        className="w-full h-full object-contain object-center scale-[1.03] transition-transform duration-500 hover:scale-[1.05]" 
+                      <img
+                        src="/Verify-Success.png"
+                        alt="Authentiq Verification UI"
+                        className="w-full h-full object-contain object-center scale-[1.03] transition-transform duration-500 hover:scale-[1.05]"
                       />
                     </div>
                   </div>
@@ -1393,7 +1393,7 @@ export default function App() {
 
                 {/* 3x2 Grid of sharp command-center style cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  
+
                   {/* Card 1: Immutable Ledger */}
                   <div className="bg-[#0b2a40] border border-white/10 p-8 rounded-lg space-y-6 hover:border-[#10b981] hover:shadow-[0_0_20px_rgba(16,185,129,0.15)] transition-all duration-300 group text-left">
                     <div className="flex items-center gap-4">
@@ -1639,7 +1639,7 @@ export default function App() {
             </div>
 
             {/* Section 2.5: Mission Section (Left: 40%, Right: 60%) */}
-            <div className="w-full bg-[#0f172a] py-28 border-t border-slate-800/50 relative z-20">
+            <div data-theme="dark" className="w-full bg-[#0f172a] py-28 border-t border-slate-800/50 relative z-20">
               <div className="max-w-7xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-5 gap-16 items-center">
                 {/* Left Column (Mission) - 40% */}
                 <div className="lg:col-span-2 space-y-6 text-left" data-aos="fade-right" data-aos-duration="1000">
@@ -1738,9 +1738,9 @@ export default function App() {
             </div>
 
             {/* Section 4: Our Journey Vertical Timeline Section */}
-            <div className="w-full bg-[#0f172a] py-28 border-t border-slate-800/50 relative z-20">
+            <div data-theme="dark" className="w-full bg-[#0f172a] py-28 border-t border-slate-800/50 relative z-20">
               <div className="max-w-7xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-5 gap-16 items-center">
-                
+
                 {/* Left Side (40% width / lg:col-span-2) */}
                 <div className="lg:col-span-2 space-y-6 text-left relative lg:-top-8" data-aos="fade-right" data-aos-duration="1000">
                   <span className="text-[#10b981] text-xs font-bold uppercase tracking-[0.25em] block">
@@ -1755,9 +1755,9 @@ export default function App() {
                 <div className="lg:col-span-3 relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                   {/* Vertical line connecting the steps */}
                   <div className="absolute left-4 top-2 bottom-2 w-px bg-[#10b981]/30" />
-                  
+
                   <div className="space-y-12">
-                    
+
                     {/* Step 1 */}
                     <div className="relative">
                       {/* Circle dot centered on the line */}
@@ -2324,11 +2324,11 @@ export default function App() {
                     {/* Full Name */}
                     <div className="space-y-1.5">
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-500">Full Name *</label>
-                      <input 
-                        type="text" 
+                      <input
+                        type="text"
                         value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
-                        placeholder="John Doe" 
+                        placeholder="John Doe"
                         className={`w-full bg-slate-50/50 border rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-600 text-slate-800 font-normal transition-colors placeholder-slate-400 ${errors.fullName ? 'border-red-500 ring-1 ring-red-500' : 'border-slate-200'}`}
                       />
                       {errors.fullName && <p className="text-[10px] text-red-500 font-medium">{errors.fullName}</p>}
@@ -2338,14 +2338,14 @@ export default function App() {
                     <div className="space-y-1.5">
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-500">Work Email *</label>
                       <div className="flex gap-2">
-                        <input 
-                          type="email" 
+                        <input
+                          type="email"
                           value={email}
                           onChange={(e) => {
                             setEmail(e.target.value);
                             setIsEmailOtpVerified(false);
                           }}
-                          placeholder="john@acmebrands.com" 
+                          placeholder="john@acmebrands.com"
                           className={`flex-1 bg-slate-50/50 border rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-600 text-slate-800 font-normal transition-colors placeholder-slate-400 ${errors.email ? 'border-red-500 ring-1 ring-red-500' : 'border-slate-200'}`}
                         />
                         <div className="w-40 flex-shrink-0">
@@ -2354,7 +2354,7 @@ export default function App() {
                               <span>Verified ✓</span>
                             </div>
                           ) : (
-                            <button 
+                            <button
                               type="button"
                               onClick={() => {
                                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -2403,7 +2403,7 @@ export default function App() {
                               <span>Verified ✓</span>
                             </div>
                           ) : (
-                            <button 
+                            <button
                               type="button"
                               onClick={() => {
                                 if (!phone || phone.trim().length !== 10) {
@@ -2427,11 +2427,11 @@ export default function App() {
                     {/* Designation / Role */}
                     <div className="space-y-1.5">
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-500">Designation / Role *</label>
-                      <input 
-                        type="text" 
+                      <input
+                        type="text"
                         value={designation}
                         onChange={(e) => setDesignation(e.target.value)}
-                        placeholder="Director / Brand Manager / Operations Manager" 
+                        placeholder="Director / Brand Manager / Operations Manager"
                         className={`w-full bg-slate-50/50 border rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-600 text-slate-800 font-normal transition-colors placeholder-slate-400 ${errors.designation ? 'border-red-500 ring-1 ring-red-500' : 'border-slate-200'}`}
                       />
                       {errors.designation && <p className="text-[10px] text-red-500 font-medium">{errors.designation}</p>}
@@ -2440,11 +2440,11 @@ export default function App() {
                     {/* Create Account Password */}
                     <div className="space-y-1.5">
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-500">Create Account Password *</label>
-                      <input 
-                        type="password" 
+                      <input
+                        type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        placeholder="••••••••" 
+                        placeholder="••••••••"
                         className={`w-full bg-slate-50/50 border rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-600 text-slate-800 font-normal transition-colors placeholder-slate-400 ${errors.password ? 'border-red-500 ring-1 ring-red-500' : 'border-slate-200'}`}
                       />
                       <p className="text-[10px] text-slate-400 mt-1 font-normal">This password will be used to log in to the Vendor Portal.</p>
@@ -2454,11 +2454,11 @@ export default function App() {
                     {/* Confirm Account Password */}
                     <div className="space-y-1.5">
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-500">Confirm Account Password *</label>
-                      <input 
-                        type="password" 
+                      <input
+                        type="password"
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
-                        placeholder="••••••••" 
+                        placeholder="••••••••"
                         className={`w-full bg-slate-50/50 border rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-600 text-slate-800 font-normal transition-colors placeholder-slate-400 ${errors.confirmPassword ? 'border-red-500 ring-1 ring-red-500' : 'border-slate-200'}`}
                       />
                       {errors.confirmPassword && <p className="text-[10px] text-red-500 font-medium">{errors.confirmPassword}</p>}
@@ -2538,7 +2538,7 @@ export default function App() {
                               We sent a verification code to <span className="font-semibold text-slate-800">{email}</span>.
                             </p>
                           </div>
-                          
+
                           <div className="bg-blue-50 border border-blue-200 rounded-xl p-3.5 text-left text-xs text-blue-700 space-y-1">
                             <span className="font-bold">⚠️ Test Simulator Hint:</span>
                             <p className="font-normal">Enter code <span className="font-black underline tracking-widest text-blue-900 font-sans">1234</span> to successfully complete email verification.</p>
@@ -2546,19 +2546,19 @@ export default function App() {
 
                           <div className="space-y-1.5">
                             <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider text-left">4-Digit Security OTP</label>
-                            <input 
-                              type="text" 
+                            <input
+                              type="text"
                               maxLength={4}
                               value={emailOtpInput}
                               onChange={(e) => setEmailOtpInput(e.target.value.replace(/\D/g, ''))}
-                              placeholder="0 0 0 0" 
+                              placeholder="0 0 0 0"
                               className="w-full text-center text-xl font-bold tracking-[0.75em] bg-slate-50 border border-slate-200 rounded-xl py-3.5 focus:outline-none focus:border-blue-600 font-mono text-slate-800 placeholder-slate-300"
                             />
                             {errors.emailOtp && <p className="text-[10px] text-red-500 font-semibold">{errors.emailOtp}</p>}
                           </div>
 
                           <div className="flex gap-3 pt-2">
-                            <button 
+                            <button
                               type="button"
                               onClick={() => {
                                 setShowEmailOtpPopup(false);
@@ -2569,7 +2569,7 @@ export default function App() {
                             >
                               Cancel
                             </button>
-                            <button 
+                            <button
                               type="button"
                               onClick={() => {
                                 if (emailOtpInput === '1234') {
@@ -3186,7 +3186,7 @@ export default function App() {
                         const currentStepId = stepItems[checkoutStep - 1].id as 'company' | 'contact' | 'addons' | 'compliance' | 'payment';
                         if (validateStep(currentStepId)) {
                           setIsProcessingPayment(true);
-                          
+
                           const payload = {
                             legalName: legalName,
                             companyType: companyType,
@@ -3201,13 +3201,13 @@ export default function App() {
                             selectedCountry: selectedCountry,
                             industry: industry,
                             website: website || null,
-                            
+
                             fullName: fullName,
                             email: email,
                             phone: phone,
                             designation: designation,
                             password: password,
-                            
+
                             planName: selectedPlan.name,
                             extraUsers: selectedPlan.extraUsers,
                             extraSKUs: selectedPlan.extraSKUs,
@@ -3328,7 +3328,7 @@ export default function App() {
     <div className="min-h-screen bg-white text-slate-800 font-sans antialiased selection:bg-[#00b074] selection:text-white">
 
       {/* KEDIA-INSPIRED HEADER BAR */}
-      <header className={`navbar ${isNavScrolled ? 'nav-scrolled' : ''}`}>
+      <header className={`navbar ${isNavScrolled ? 'nav-scrolled' : ''} ${logoTheme === 'dark' ? 'navbar-dark' : 'navbar-light'}`}>
         <div className="w-full flex items-center justify-between relative">
 
           {/* Logo Frame */}

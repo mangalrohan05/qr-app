@@ -131,12 +131,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.75); /* Light transparent background with blur */
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
   z-index: 1000;
-  transition: height 0.3s ease, padding 0.3s ease;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              padding 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              backdrop-filter 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Initial state: transparent at the top */
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-bottom: 1px solid transparent;
 }
 
 .navbar.nav-scrolled {
@@ -144,22 +150,45 @@
   padding: 0 3%;
 }
 
+.navbar.navbar-light.nav-scrolled {
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+}
+
+.navbar.navbar-dark.nav-scrolled {
+  background-color: rgba(5, 11, 20, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 /* Brand styling */
 .brand-name {
   font-weight: bold !important;
 }
 
-/* Dark links for readability */
-.navbar button {
+/* Link and Button colors dynamic styling */
+.navbar.navbar-light button {
   color: #003057 !important;
   text-decoration: none;
   font-weight: 500;
-  transition: opacity 0.2s ease;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
+
+.navbar.navbar-dark button {
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
 .navbar button:hover {
   color: #00b074 !important;
   opacity: 0.85;
 }
+
 .navbar button.active-nav {
   color: #00b074 !important;
 }
